@@ -28,5 +28,8 @@ module RailsApiBlank
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Даже миграцию не даёт запустить без проверки ярн, так что проверка ярн на усмотрение запускающего приложение.
+    config.webpacker.check_yarn_integrity = false
   end
 end
